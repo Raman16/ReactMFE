@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   module:{
       rules:[
@@ -13,7 +14,12 @@ module.exports = {
               }
           }
       ]
-  }
+  },
+  plugins:[
+    new HtmlWebpackPlugin({
+        template:'./public/index.html'
+    })
+  ]
 };
 //@babel/preset-react -> babel is going to process all the different jsx tag in our code
 //@babel/preset-env -> transforms es15,16,17,18,.... to ES5
