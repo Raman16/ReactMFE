@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm install
-      - run: npm run build
+      - run: npm run build #generates production files
         env:  #when npm run build run we fetch below PRODUCTION_DOMAIN
           PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
 
