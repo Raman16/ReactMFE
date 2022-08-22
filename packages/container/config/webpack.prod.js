@@ -9,7 +9,7 @@ const prodConfig = {
     mode:'production', //js files will get optimized
     output:{
         filename:'[name].[contenthash].js',
-        publicPath:'/container/latest'
+        publicPath:'/container/latest/'
     },
     plugins:[
         new ModuleFedarationPlugin({
