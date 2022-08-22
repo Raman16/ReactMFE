@@ -8,7 +8,8 @@ const domain = process.env.PRODUCTION_DOMAIN;
 const prodConfig = {
     mode:'production', //js files will get optimized
     output:{
-        filename:'[name].[contenthash].js'
+        filename:'[name].[contenthash].js',
+        publicPath:'/container/latest'
     },
     plugins:[
         new ModuleFedarationPlugin({
